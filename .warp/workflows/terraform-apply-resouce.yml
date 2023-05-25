@@ -1,0 +1,17 @@
+---
+name: Terraform Apply resource
+command: terraform apply -var-file=vars/{{env}}.tfvars -target={{resource}}.{{resource_name}}
+tags:
+  - terraform
+description: "Apply a specific resource in a terraform"
+arguments:
+  - name: env
+    description: Terraform environment variable
+  - name: resource
+    description: Resource type
+  - name: resource_name
+    description: The name of the resource
+source_url: "https://github.com/jj6584/dotfiles"
+author: Joshua Manaol
+author_url: "https://github.com/jj6584"
+shells: []
