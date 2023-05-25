@@ -1,0 +1,21 @@
+---
+name: SSM to AWS Instance
+command: aws ssm --profile {{profile}} --region {{region}} start-session --target {{instance-id}}
+tags:
+  - aws
+  - awscli
+  - ssm
+description: "Starts a SSM session to an AWS instance"
+arguments:
+  - name: profile
+    description: AWS Local Profile
+    default_value: default
+  - name: region
+    description: AWS Region
+    default_value: us-east-1
+  - name: instance-id
+    description: AWS Instance ID
+source_url: "https://github.com/jj6584/dotfiles"
+author: Joshua Manaol
+author_url: "https://github.com/jj6584"
+shells: []
