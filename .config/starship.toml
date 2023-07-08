@@ -83,7 +83,7 @@ python_binary = "python3"
 
 [nodejs]
 format = "via [󰎙 $version](bold green) "
-disabled = true
+disabled = false
 
 [ruby]
 format = "via [ $version]($style) "
@@ -92,8 +92,8 @@ format = "via [ $version]($style) "
 format = 'via [󰟓 ($version )($mod_version )]($style)'
 
 [kubernetes]
-format = 'on [ $context\($namespace\)](bold purple) '
-disabled = false
+format = 'on [󱃾 $context\($namespace\)](bold purple) '
+disabled = true
 [kubernetes.context_aliases]
 "clcreative-k8s-staging" = "cl-k8s-staging"
 "clcreative-k8s-production" = "cl-k8s-prod"
